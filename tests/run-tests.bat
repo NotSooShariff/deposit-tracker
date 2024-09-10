@@ -1,3 +1,4 @@
+:: Shortcut Script
 @echo off
 
 :: Navigate to the core directory
