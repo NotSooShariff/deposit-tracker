@@ -1,6 +1,5 @@
 import { AlchemyProvider } from 'ethers';
 
-// Define the Block type
 export type Block = {
   provider: AlchemyProvider;
   number: number;

@@ -1,5 +1,5 @@
 import { Logger } from './utils/log';
-import { doMigration } from './migrate';
+import { doMigration } from './utils/migrate';
 import { startTrackingDeposits } from './utils/tracker';
 
 const logger = new Logger();
@@ -12,8 +12,13 @@ async function main() {
     logger.info('Starting tracker...');
     startTrackingDeposits();
   } catch (error) {
-    logger.error(error);
+    if (error instanceof Error) {
+      logger.error(error.message); 
+    } else {
+      logger.error(JSON.stringify(error));
+    }
   }
+  
 }
 
 main();
