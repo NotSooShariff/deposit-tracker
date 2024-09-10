@@ -1,9 +1,8 @@
-<center>
-  
-# Ethereum Deposit Tracker
-This Ethereum Deposit Tracker monitors and records ETH deposits on the Beacon Deposit Contract. 
+<h1 align="center">Ethereum Deposit Tracker</h1>
 
-</center>
+<p align="center"><b>
+  This Ethereum Deposit Tracker monitors and records ETH deposits on the Beacon Deposit Contract.
+</b></p>
 
 
 <p align="center">
