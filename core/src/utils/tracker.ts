@@ -25,7 +25,7 @@ interface DepositEventPayload {
   event: ContractEventPayload;
 }
 
-const fetchTransactionData = async (transactionHash: string, blockNumber: number) => {
+export const fetchTransactionData = async (transactionHash: string, blockNumber: number) => {
   const block = await provider.getBlock(blockNumber);
   if (!block) throw new Error('Block not found');
 
@@ -38,7 +38,7 @@ const fetchTransactionData = async (transactionHash: string, blockNumber: number
   return { block, transaction, transactionReceipt };
 };
 
-const logDepositEvent = (
+export const logDepositEvent = (
   blockNumber: number,
   transactionHash: string,
   timestamp: Date,
@@ -67,7 +67,7 @@ const logDepositEvent = (
   
 };
 
-const storeDepositInDatabase = async (
+export const storeDepositInDatabase = async (
   transactionHash: string,
   blockNumber: number,
   timestamp: Date,
@@ -83,7 +83,7 @@ const storeDepositInDatabase = async (
   });
 };
 
-const handleDepositEvent = async ({
+export const handleDepositEvent = async ({
   pubkey,
   withdrawal_credentials,
   amount,
