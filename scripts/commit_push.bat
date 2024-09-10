@@ -9,7 +9,7 @@ set /p commit_message=Enter commit message:
 :: Add changes, commit, and push
 git add .
 git commit -m "%commit_message%"
-git push
+git push origin main
 
 :: Confirm success
 if %ERRORLEVEL% == 0 (
