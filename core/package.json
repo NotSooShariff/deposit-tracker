@@ -1,0 +1,42 @@
+{
+  "name": "deposit-tracker",
+  "version": "1.0.0",
+  "description": "An Ethereum Deposit Tracker that monitors and records ETH deposits on the Beacon Deposit Contract using Ethereum RPC. Features real-time tracking, error handling, and optional alerting via Grafana and Telegram notifications.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx --watch src/index.ts",
+    "generate": "drizzle-kit generate",
+    "migrate": "drizzle-kit migrate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NotSooShariff/deposit-tracker.git"
+  },
+  "keywords": [
+    "luganodes",
+    "ethereum",
+    "deposit",
+    "tracker"
+  ],
+  "author": "NotSooShariff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NotSooShariff/deposit-tracker/issues"
+  },
+  "homepage": "https://github.com/NotSooShariff/deposit-tracker#readme",
+  "devDependencies": {
+    "drizzle-kit": "^0.23.0",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "@types/node": "^20.14.10",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.32.0",
+    "ethers": "^6.13.1",
+    "postgres": "^3.4.4"
+  }
+}

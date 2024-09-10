@@ -1,0 +1,19 @@
+name: Telegram Notification
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  send_telegram_notification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send notification via Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          curl -s -X POST https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage \
+          -d chat_id=${TELEGRAM_CHAT_ID} \
+          -d text="A new commit has been pushed to the repository. Pull it to your server to update. Check it out: ${{ github.repository }}. Commit: ${{ github.sha }} by ${{ github.actor }}"
