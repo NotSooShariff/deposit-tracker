@@ -1,10 +1,16 @@
+<center>
+  
 # Ethereum Deposit Tracker
+This Ethereum Deposit Tracker monitors and records ETH deposits on the Beacon Deposit Contract. 
 
-## Overview
+</center>
 
-This Ethereum Deposit Tracker monitors and records ETH deposits on the Beacon Deposit Contract (0x00000000219ab540356cBB839Cbe05303d7705Fa). The application integrates Ethereum RPC methods, uses a TypeScript backend, Postgres database with Drizzle ORM, and includes monitoring and alerting with Grafana, Prometheus, and cAdvisor.
 
-Why Pick This Project?
+<p align="center">
+  <img src="assets/banner-img.png" alt="Ethereum Deposit Tracker Banner"/>
+</p>
+
+## Why Pick This Project?
 
 1. **Deliverables on Steroids**  
    Not only did I tick off all the required tasks and bonus sections (hello, Docker), but I also threw in a fully loaded Docusaurus documentation site, set up Telegram notifications for repo push events, and even deployed it to a real server—because why stop at just *good enough*?
@@ -15,12 +21,15 @@ Why Pick This Project?
 3. **Corporate-Level Code—Or So I Hope**  
    Written entirely in TypeScript (because who doesn’t love type safety?), the code comes packed with a custom logger and error handling that would make any CTO nod approvingly. Let’s just say, I’m aiming for *clean, professional*, with a side of "hey, this could actually run in production."
 
-### Features:
+---
+
+## Features
+
 - **Real-time deposit tracking**: Tracks deposits on the Beacon Deposit Contract.
 - **Multiple deposit handling**: Capable of processing multiple deposits within a single transaction.
 - **Error handling & logging**: Comprehensive logging for errors and key events.
 - **Metrics & Visualization**: Grafana dashboard with Prometheus for deposit tracking metrics.
-- **Optional Alerts**: Telegram notifications for detected deposits (optional).
+- **Optional Alerts**: Telegram notifications for detected deposits.
 
 ---
 
@@ -30,16 +39,10 @@ Why Pick This Project?
 - **Database**: Postgres with Drizzle ORM
 - **Monitoring**: Grafana, Prometheus, cAdvisor
 - **Blockchain Interaction**: Ethereum RPC (via Alchemy)
-- **Containerization**: Docker 
+- **Containerization**: Docker
 
 ---
 
-## Project Setup
 
-### Prerequisites
+Additional documentation on setup, detailed installation instructions, and deployment configurations can be found [here](link_to_docs).
 
-Ensure you have the following installed:
-- Node.js (v16.x or higher)
-- PostgreSQL
-- Docker (optional, for deployment and monitoring tools)
-- Grafana, Prometheus, and cAdvisor
