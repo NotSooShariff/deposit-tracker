@@ -13,12 +13,12 @@
 ## 🔥 Why Pick This Project?
 
 1. **Deliverables on Steroids**  
-   I didn’t just complete the tasks—I went above and beyond! From bonus sections (hello, Docker 🐳) to a fully loaded Docusaurus documentation site, I also set up Telegram notifications for repo push events 📬 and deployed everything to a live server. No half-measures here!
+   I didn’t just complete the tasks—I went above and beyond! From bonus sections (hello, Docker 🐳) to a fully loaded Docusaurus [documentation site](https://depodocs.osh.fyi/), I also set up Telegram notifications for repo push events 📬 and deployed everything to a live server. No half-measures here!
 
 2. **A Tech Stack Built to Impress**  
-   With Grafana 📊, cAdvisor 🖥️, and Prometheus 🔍, this project is enterprise-ready. Designed for real-time monitoring of blockchain infrastructure (Ethereum included ⛓️), it’s built for smooth, hassle-free operation. 
+   With Grafana 📊, cAdvisor 🖥️, and Prometheus 🔍, this project is enterprise-ready. Designed for real-time monitoring of blockchain infrastructure, it’s built for smooth, hassle-free operation. 
 
-3. **Corporate-Level Code—Or So I Hope**  
+3. **Corporate-Level Code (Or So I Hope)**  
    Written in TypeScript (because type safety 💪), the code includes a custom logger and robust error handling. The goal: clean, professional, and production-ready from the get-go.
 
 ---
@@ -43,4 +43,4 @@
 
 ---
 
-📄 Additional documentation on setup, detailed installation instructions, and deployment configurations can be found [here](link_to_docs).
+📄 Additional documentation on setup, detailed installation instructions, and deployment configurations can be found [here](https://depodocs.osh.fyi/).
