@@ -10,11 +10,6 @@ BUILD_DIR := core/views/grafana
 .PHONY: all
 all: build
 
-.PHONY: build
-build:
-	@echo "Building the project..."
-	# TODO: Have to add build commands here
-
 .PHONY: clean
 clean:
 	@echo "Cleaning the project..."
@@ -24,17 +19,30 @@ clean:
 format:
 	@echo "Formatting code..."
 	# TODO: Add formatting commands here
-	black $(SRC_DIR)
+	# Example -
+	# black $(SRC_DIR)
 
 .PHONY: test
 test:
 	@echo "Running tests..."
-	# TODO: Add tests & command here
+ifeq ($(OS),Linux)
+	@echo "Running tests on Linux..."
+	bash tests/run-tests.sh
+else ifeq ($(OS),Darwin) # For macOS
+	@echo "Running tests on macOS..."
+	bash tests/run-tests.sh
+else
+	@echo "Running tests on Windows..."
+	./tests/run-tests.bat
+endif
 
 .PHONY: git-push
 git-push:
 ifeq ($(OS),Linux)
 	@echo "Running Linux script for git commit and push..."
+	bash $(SCRIPTS_DIR)/commit_push.sh
+else ifeq ($(OS),Darwin)
+	@echo "Running macOS script for git commit and push..."
 	bash $(SCRIPTS_DIR)/commit_push.sh
 else
 	@echo "Running Windows batch script for git commit and push..."
@@ -45,7 +53,6 @@ endif
 help:
 	@echo "Available targets:"
 	@echo "  all        - Build the project"
-	@echo "  build      - Build the project"
 	@echo "  clean      - Clean the build directory"
 	@echo "  format     - Format the code"
 	@echo "  test       - Run tests"
