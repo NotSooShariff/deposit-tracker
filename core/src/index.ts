@@ -4,7 +4,7 @@ import { startTrackingDeposits } from './utils/tracker';
 
 const logger = new Logger();
 
-async function main() {
+export async function main() {
   try {
     logger.info('Executing migrations');
     await doMigration();

@@ -24,9 +24,12 @@ To clone the Ethereum Deposit Tracker repository, open your terminal or command 
 
 ```bash
 git clone https://github.com/NotSooShariff/deposit-tracker
+cd deposit-tracker
 ```
 
 This command will create a local copy of the repository on your machine.
+
+![Git Clone](img/gitclone.png)
 
 ## Placement of the Repository
 
