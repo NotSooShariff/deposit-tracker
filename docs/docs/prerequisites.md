@@ -18,7 +18,7 @@ Ensure you have the following:
 - **Telegram API Key**  
   If you want to receive alerts via Telegram, you’ll need a valid API key to connect the application to Telegram.
 
-- ** Git **
+- **Git**
   Git is necessary for version control and collaboration. It allows you to manage your codebase, track changes, and collaborate with others efficiently. Ensure you have Git installed to clone repositories, commit changes, and push updates.
 
 ## Getting Node.js

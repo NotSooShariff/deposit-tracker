@@ -67,6 +67,8 @@ With the data source configured, you can now add visualizations to your dashboar
 
 - Click **"Run Query"** to execute the query and fetch data.
 - Switch to the **"Table"** visualization to view the data in a tabular format.
+  ![alt text](img/deposit-table.jpg)
+  ![alt text](img/transactions-recorded.jpg)
 
 ## 6. Save the Dashboard
 
@@ -74,5 +76,6 @@ Once you’ve added your desired visualizations:
 
 - Click **"Save dashboard"** at the top of the page.
 - Enter a name for your dashboard and click **"Save"**.
+  ![alt text](img/save-dashboard.jpg)
 
 Your dashboard is now set up to view deposit data from your PostgreSQL database. You can customize it further by adding more panels, adjusting queries, and configuring various visualization options to suit your needs.
