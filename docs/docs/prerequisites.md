@@ -67,9 +67,7 @@ To interact with the Ethereum blockchain, you’ll need an Alchemy API key. Foll
 
 4. **Get your API key**  
    After creating the app, you’ll be directed to the app’s dashboard. Copy the **HTTP URL** or **API Key** provided. This key will be used to make requests to the Ethereum network.
-
-5. **Integrate your API key**  
-   Use the copied API key in your project’s environment variables or configuration file to connect to the Ethereum blockchain via Alchemy.
+   ![Alchemy API](img/alchemy-api.png)
 
 And you're all set! Now your Ethereum Deposit Tracker can interact with the blockchain via Alchemy’s services.
 

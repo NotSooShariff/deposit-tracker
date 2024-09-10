@@ -7,7 +7,7 @@ sidebar_position: 1
 This Ethereum Deposit Tracker monitors and records ETH deposits on the Beacon Deposit Contract (`0x00000000219ab540356cBB839Cbe05303d7705Fa`). The application integrates Ethereum RPC methods, uses a TypeScript backend, Postgres database with Drizzle ORM, and includes monitoring and alerting with Grafana, Prometheus, and cAdvisor.
 
 Follow the steps in this documentation site to self-host this application.
-
+<!-- 
 ## Why Pick This Project?
 
 1. **Deliverables on Steroids**  
@@ -39,7 +39,7 @@ Follow the steps in this documentation site to self-host this application.
 - **Blockchain Interaction**: Ethereum RPC (via Alchemy) ⛓️
 - **Containerization**: Docker 🐳
 
----
+--- -->
 
 ## Next Steps
 
