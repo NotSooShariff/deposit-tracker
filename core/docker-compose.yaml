@@ -18,7 +18,7 @@ services:
     image: deposit-tracker:latest
     build:
       context: .
-    container_name: eth-deposit-tracker
+    container_name: ethereum-deposit-tracker
     environment:
       - DATABASE_URL=postgresql://grafana:grafana@postgres:5432/grafana
       - ALCHEMY_API_KEY=${ALCHEMY_API_KEY}
