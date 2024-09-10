@@ -1,7 +1,7 @@
 # Detect OS
 OS := $(shell uname -s)
 
-# Variables
+# Variables to Edit on Project Changes
 PROJECT_NAME := deposit-tracker
 SCRIPTS_DIR := scripts
 SRC_DIR := src
