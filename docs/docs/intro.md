@@ -2,46 +2,50 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Ethereum Deposit Tracker
 
-Let's discover **Docusaurus in less than 5 minutes**.
+This Ethereum Deposit Tracker monitors and records ETH deposits on the Beacon Deposit Contract (`0x00000000219ab540356cBB839Cbe05303d7705Fa`). The application integrates Ethereum RPC methods, uses a TypeScript backend, Postgres database with Drizzle ORM, and includes monitoring and alerting with Grafana, Prometheus, and cAdvisor.
 
-## Getting Started
+Follow the steps in this documentation site to self-host this application.
 
-Get started by **creating a new site**.
+## Why Pick This Project?
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+1. **Deliverables on Steroids**  
+   I didn’t just complete the tasks—I went above and beyond! From bonus sections (hello, Docker 🐳) to a fully loaded Docusaurus documentation site, I also set up Telegram notifications for repo push events 📬 and deployed everything to a live server. No half-measures here!
 
-### What you'll need
+2. **A Tech Stack Built to Impress**  
+   With Grafana 📊, cAdvisor 🖥️, and Prometheus 🔍, this project is enterprise-ready. Designed for real-time monitoring of blockchain infrastructure (Ethereum included ⛓️), it’s built for smooth, hassle-free operation.
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+3. **Corporate-Level Code**  
+   Written in TypeScript (for type safety 💪), the code includes a custom logger and robust error handling. The goal: clean, professional, and production-ready from the get-go.
 
-## Generate a new site
+---
 
-Generate a new Docusaurus site using the **classic template**.
+## Features
 
-The classic template will automatically be added to your project after you run the command:
+- **Real-time deposit tracking**: Tracks and records ETH deposits on the Beacon Deposit Contract.
+- **Multiple deposit handling**: Processes multiple deposits within a single transaction efficiently.
+- **Error handling & logging**: Comprehensive logging for key events and errors, making the code robust.
+- **Metrics & Visualization**: Prometheus-backed metrics and a Grafana dashboard for real-time deposit tracking.
+- **Optional Alerts**: Set up optional Telegram notifications for detected deposits, so you're always in the loop.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+---
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+## Tech Stack
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+- **Language**: TypeScript 💻
+- **Database**: Postgres with Drizzle ORM 🗄️
+- **Monitoring**: Grafana, Prometheus, cAdvisor 📈
+- **Blockchain Interaction**: Ethereum RPC (via Alchemy) ⛓️
+- **Containerization**: Docker 🐳
 
-## Start your site
+---
 
-Run the development server:
+## Next Steps
 
-```bash
-cd my-website
-npm run start
-```
+To get started, ensure that you have the necessary prerequisites installed. You can find detailed instructions on installing Node.js, Docker, and other necessary tools in the [Prerequisites](prerequisites) section.
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+Once you're set up, follow the guide to configure your environment, connect to the Beacon Deposit Contract, and deploy the project on your infrastructure. Additionally, optional features like Telegram notifications and custom Grafana dashboards can be configured to enhance your monitoring capabilities.
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+

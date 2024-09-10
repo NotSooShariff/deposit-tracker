@@ -1,0 +1,8 @@
+{
+  "label": "Windows Setup",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn how to set up this deposit tracker on a Windows Machine."
+  }
+}
