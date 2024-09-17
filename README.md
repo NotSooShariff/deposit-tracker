@@ -1,11 +1,11 @@
 <h1 align="center">🚀 Ethereum Deposit Tracker 🚀</h1>
 
 <p align="center"><b>
-  This Ethereum Deposit Tracker monitors and records ETH deposits on the Beacon Deposit Contract with ease and precision. 
+  This Ethereum Deposit Tracker accurately monitors and records ETH deposits on the Beacon Deposit Contract. 
 </b></p>
 
 <p align="center">
-  <img src="assets/banner-img.png" alt="Ethereum Deposit Tracker Banner"/>
+  <img src="assets/banner-image.png" alt="Ethereum Deposit Tracker Banner"/>
 </p>
 
 ---
